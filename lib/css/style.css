@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+/*sistema*/
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*classes auxiliares*/
+.float {
+    float: left;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.img-card {
+    position: absolute;
+    width: 30px;
+    margin-top: -2.7rem;
+    margin-left: 2rem;
+}
+
+
+/*configurações gerais*/
+
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/imagemFundo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.login {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+}
+
+.loginTextos {
+    width: 70%;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.cadastro {
+    float: left;
+    width: 60%;
+    margin: 15px 20%;
+}
+
+.topFaixa {
+    height: 50px;
+    background: #025158;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+}
+
+.resultadoForm {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    line-height: 20px;
+}
+
+.navbar {
+    position: relative;
+    margin: 0px 0px 20px;
+}
+
+.calend {
+    position: absolute;
+    height: 80px;
+}
+
+@media screen and (max-width: 480px) {
+
+    input[type='submit'] {
+        width: 40%;
+    }
+
+    .login {
+        width: 90%;
+    }
+
+    .loginTextos {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cadastro {
+        width: 80%;
+        margin: 15px 10%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+
+    input[type='submit'] {
+        width: 40%;
+    }
+
+    .login {
+        width: 60%;
+    }
+
+    .loginTextos {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width: 1199px) {
+
+    input[type='submit'] {
+        width: 40%;
+    }
+
+    .login {
+        width: 40%;
+    }
+
+    .loginTextos {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1200px) {}
+
+.bodyDark {
+    background: black;
+    margin: auto;
+    padding: unset;
+}
+
+.textoNav {
+    color: #fc5203;
+}
+
+.carousel-inner>.carousel-item>img {
+    width: 700px;
+    height: 400px;
+}
+
+:root {
+    --cor-secundario: #f78f06;
+    --fundo-janela: #ccc;
+    --cor-hover: #d37d0c;
+}
+
+.tituloPrincipal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tituloPrincipal h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tituloPrincipal button {
+    background-color: var(--cor-secundario);
+    color: #fff;
+    margin-right: 2%;
+    border-radius: 20px;
+    width: 18%;
+    border: none;
+
+}
+
+/* .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.hrIndex {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.imgEsp {
+    width: 60px;
+}
+
+.endereco {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.iconEnd {
+    padding: 5px;
+}
+
+.principalDados {
+    padding: 5px;
+}
+
+.numeroTel {
+    display: flex;
+    margin-top: -15px;
+    color: var(--cor-secundario);
+}
+
+.horario {
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.horario p {
+    margin: 0;
+}
+
+.btnPrinc {
+    display: flex;
+    justify-content: center;
+    border-radius: 70px !important;
+    text-align: center;
+}
+
+.btnAgendamento {
+    background-color: var(--cor-secundario);
+    border-radius: 20px;
+    width: 40%;
+    /* height: 40px; */
+    padding: 10px;
+    text-align: center;
+}
+
+.btnAgendamento:hover {
+    background-color: var(--cor-hover);
+}
+
+.tituloNav {
+    display: flex;
+    margin-right: 35%;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.principal {
+    margin-top: 35px;
+}
+
+/* --------- Estilo do input --------------- */
+
+/* Estilo para o container do input */
+.custominput {
+    position: relative;
+    width: var(--larg-padrao);
+}
+
+/* Estilo para o label simulando a legend */
+.customlabel {
+    position: absolute;
+    /* Posiciona o label de forma absoluta em relação ao container */
+    top: -10px;
+    /* Move o label para cima, para sobrepor a borda superior do container */
+    left: 35px;
+    /* Adiciona um pequeno recuo à esquerda para alinhar com o conteúdo do container */
+    background-color: white;
+    /* Garante que o label cubra a borda superior do container */
+    padding: 0 5px;
+    /* Adiciona um pequeno espaço interno ao label */
+    font-weight: bold;
+}
+
+/* Estilo para o input */
+.custominput textarea, 
+.custominput input, 
+.custominput select {
+    text-align: center;
+    width: 100%;
+    /* Ocupa 100% da largura disponível dentro do container */
+    box-sizing: border-box;
+    /* Inclui a largura da borda e do preenchimento no cálculo da largura total */
+    padding: 10px;
+    /* Espaço interno de 10 pixels em todos os lados do input */
+    border: 1px solid #ccc;
+    /* Borda com cor cinza claro */
+    border-radius: 40px;
+    /* Borda com cantos arredondados */
+}
+
+/* Estilo para o placeholder */
+.custominput select:empty {
+    color: #999 !important;
+    /* Cor do texto do placeholder */
+    text-indent: 29px;
+    /* Ajuste o valor conforme necessário */
+}
+.custominput input::placeholder {
+    text-indent: 20px !important;
+    /* Ajuste o valor conforme necessário */
+}
+#resultado img{
+    margin-right: 5px;
+}
+/* ---------- Estilo input select --------------

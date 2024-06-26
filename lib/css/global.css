@@ -1,0 +1,12 @@
+@import url(calendario.css);
+:root{
+    --cor-secundario:#f78f06;
+    --fundo-janela:#ccc;
+    --cor-hover:#d37d0c;
+    --larg-padrao: 300px;
+    --cor-texto-sec:#777676;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -12,13 +12,13 @@ class ClassCadastro extends ClassCrud{
             array(
                 0,
                 $arrVar['nome'],
-                $arrVar['prontuario'],
                 $arrVar['email'],
                 $arrVar['hashSenha'],
                 $arrVar['dataNascimento'],
                 $arrVar['dataCreate'],
                 'user',
-                'confirmation'
+                'confirmation',
+                $arrVar['telefone']
             )
         );
 

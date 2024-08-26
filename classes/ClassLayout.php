@@ -1,7 +1,6 @@
 <?php
 
 namespace Classes;
-use Models\ClassCrud;
 
 class ClassLayout
 {
@@ -34,10 +33,10 @@ class ClassLayout
         if ($css != null) {
             if (is_array($css)) {
                 foreach ($css as $script) {
-                    $html .= "<script src='" . DIRCSS . $script . "'></script>\n";
+                    $html .= "<link rel='stylesheet' href='" . DIRCSS . $script . "'>\n";
                 }
             } else {
-                $html .= "<script src='" . DIRCSS . $css . "'></script>\n";
+                $html .= "<link rel='stylesheet' href='" . DIRCSS . $css . "'>\n";
             }
         }
         $html .= "</head>\n\n";
@@ -80,7 +79,9 @@ class ClassLayout
                         <li class='nav-item'>
                             <a class='nav-link active' aria-current='page' href='". DIRPAGE."agendamento'>agendamento</a>
                         </li>
-
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='". DIRPAGE."Login'>Login</a>
+                        </li>
                     </ul>
                 </div>
                 <h2 class='tituloNav'>Barbearia</h2>

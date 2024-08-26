@@ -91,8 +91,8 @@ class ClassValidate{
     #Validação se o dado é uma data
     public function validateData($par)
     {
-        $data=\DateTime::createFromFormat("d/m/Y",$par);
-        if(($data) && ($data->format("d/m/Y") === $par)){
+        $data=\DateTime::createFromFormat("Y-m-d",$par);
+        if(($data) && ($data->format("Y-m-d") === $par)){
             return true;
         }else{
             $this->setErro("Data inválida!");
@@ -112,27 +112,27 @@ class ClassValidate{
         }
     }
 
-    #Validação se é um cpf real
-    public function validateCpf($par)
-    {
-        $cpf = preg_replace('/[^0-9]/', '', (string) $par);
-        if (strlen($cpf) != 11){
-            $this->setErro("Cpf Inválido!");
-            return false;
-        }
-        for ($i = 0, $j = 10, $soma = 0; $i < 9; $i++, $j--)
-            $soma += $cpf[$i] * $j;
-            $resto = $soma % 11;
-        if ($cpf[9] != ($resto < 2 ? 0 : 11 - $resto))
-        {
-            $this->setErro("Cpf Inválido!");
-            return false;
-        }
-        for ($i = 0, $j = 11, $soma = 0; $i < 10; $i++, $j--)
-            $soma += $cpf[$i] * $j;
-            $resto = $soma % 11;
-            return $cpf[10] == ($resto < 2 ? 0 : 11 - $resto);
-    }
+    // #Validação se é um cpf real
+    // public function validateCpf($par)
+    // {
+    //     $cpf = preg_replace('/[^0-9]/', '', (string) $par);
+    //     if (strlen($cpf) != 11){
+    //         $this->setErro("Cpf Inválido!");
+    //         return false;
+    //     }
+    //     for ($i = 0, $j = 10, $soma = 0; $i < 9; $i++, $j--)
+    //         $soma += $cpf[$i] * $j;
+    //         $resto = $soma % 11;
+    //     if ($cpf[9] != ($resto < 2 ? 0 : 11 - $resto))
+    //     {
+    //         $this->setErro("Cpf Inválido!");
+    //         return false;
+    //     }
+    //     for ($i = 0, $j = 11, $soma = 0; $i < 10; $i++, $j--)
+    //         $soma += $cpf[$i] * $j;
+    //         $resto = $soma % 11;
+    //         return $cpf[10] == ($resto < 2 ? 0 : 11 - $resto);
+    // }
 
     #Verificar se a senha é igual a confirmação de senha
     public function validateConfSenha($senha,$senhaConf)

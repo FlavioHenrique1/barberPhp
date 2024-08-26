@@ -37,12 +37,6 @@ a {
     width: 80%;
 }
 
-.img-card {
-    position: absolute;
-    width: 30px;
-    margin-top: -2.7rem;
-    margin-left: 2rem;
-}
 
 
 /*configurações gerais*/
@@ -55,37 +49,6 @@ a {
     height: 100%;
     background: url('../../img/imagemFundo.jpg') center center no-repeat;
     background-size: cover;
-}
-
-.login {
-    position: absolute;
-    width: 30%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 30px;
-}
-
-.loginTextos {
-    width: 70%;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-.cadastro {
-    float: left;
-    width: 60%;
-    margin: 15px 20%;
-}
-
-.topFaixa {
-    height: 50px;
-    background: #025158;
-    font-weight: bold;
-    color: #fff;
-    line-height: 50px;
 }
 
 .resultadoForm {
@@ -342,4 +305,4 @@ a {
 #resultado img{
     margin-right: 5px;
 }
-/* ---------- Estilo input select --------------
+/* ---------- Estilo input select --------------: */

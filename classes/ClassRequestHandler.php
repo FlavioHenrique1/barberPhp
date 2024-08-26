@@ -3,6 +3,14 @@ namespace Classes;
 class ClassRequestHandler {
 
     public static function getJsonInput() {
+        $contentType = array_key_exists('CONTENT_TYPE', $_SERVER) ? $_SERVER['CONTENT_TYPE'] : '';
+
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            return $_GET; // Para query parameters
+        }
+        if ($contentType !== 'application/json') {
+            return null;
+        }
         // Definir o cabeçalho para JSON
         header('Content-Type: application/json');
 

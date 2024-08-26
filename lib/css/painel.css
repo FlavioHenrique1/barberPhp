@@ -1,0 +1,67 @@
+.img-card {
+    position: absolute;
+    width: 5rem;
+    margin-top: -3rem;
+    margin-left: 3rem;
+}
+.cardPainel{
+    margin-top: 0.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1),
+    4px 0 8px rgba(0, 0, 0, 0.1), -4px 0 8px rgba(0, 0, 0, 0.1);
+}
+.cardTabela{
+    margin-top: 0.6rem;
+    margin-left: 0.9rem;
+    width: 96% !important;
+    border-radius: 1.5rem;
+}
+.divHeadTable{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+}
+.inicio {
+    justify-self: start;
+}
+.fim {
+    justify-self: end;
+}
+.textoCard{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.h2-card{
+    color: rgb(165, 172, 170);
+}
+.textoInici{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.linkTabela a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.graficoDoughnut{
+    width: 20rem;
+}
+.cardGrafico{
+    display: flex;
+    align-items: center;
+    height: 22.5rem;
+    min-height: 20rem;
+    /* background-color: red; */
+
+}
+.confirmado{
+    color: #47C454;
+    font-weight: bold;
+}
+.pendente{
+    color: #FFD02C;
+    font-weight: bold;
+}
+.cancelado{
+    color: #F65A64;
+    font-weight: bold;
+}

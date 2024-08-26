@@ -3,7 +3,7 @@
 $pastaInterna="barber/";
 #Acesso ao BD
 $host = "localhost";
-$bd = "qualidade";
+$bd = "barber";
 $userBd = "root";
 $passBd = "";
 

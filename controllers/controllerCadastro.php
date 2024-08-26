@@ -1,6 +1,11 @@
 <?php
+$ReqHandler =new Classes\ClassRequestHandler();
+
+// Recuperar os dados JSON usando a classe utilitária
+$data = $ReqHandler->getJsonInput();
+
 $validate=new Classes\ClassValidate();
-$validate->validateFields($_POST);
+$validate->validateFields($data);
 $validate->validateEmail($email);
 $validate->validateIssetEmail($email);
 $validate->validateData($dataNascimento);

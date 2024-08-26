@@ -1,0 +1,89 @@
+.imgIcon{
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* ou qualquer valor desejado */
+}
+.textoSpan{
+    margin-top: -1.1rem;
+    width: var(--larg-padrao);
+    display: flex;
+    justify-content:flex-end;
+    color: var(--cor-texto-sec);
+}
+.divCheckbox{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: baseline;
+    width: var(--larg-padrao);
+}
+.divCheckbox input{
+    margin-right: 5px;
+    border-radius: 40px !important;
+    background-color: var(--cor-secundario) !important;
+    border: var(--cor-secundario) !important;
+}
+.divCheckbox label{
+    color: var(--cor-texto-sec);
+}
+.textSpan{
+    color: var(--cor-texto-sec);
+
+}
+.customDiv{
+    display: flex;
+    background-color: rgb(241, 236, 236);
+    width: 300px; /* Ocupa 100% da largura disponível dentro do container */
+    height: 35px;
+    border: 1px solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 40px; /* Borda com cantos arredondados */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.ativo{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+.ativo span{
+    color: black !important;
+}
+
+.divBt span{
+    color: #777676;
+}
+
+.divBt{
+    width: 50%;
+    border-radius: 40px; /* Borda com cantos arredondados */
+    text-align: center;
+    padding: 4px;
+    border: none;
+}
+.btnLogin {
+    background-color: var(--cor-secundario);
+    border-radius: 20px;
+    width: var(--larg-padrao);
+    /* height: 40px; */
+    padding: 10px;
+    text-align: center;
+}
+.textoLogin{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;           
+}
+.conteudo .active {
+    display: block;
+}
+
+.conteudo .inactive {
+    display: none;
+}
